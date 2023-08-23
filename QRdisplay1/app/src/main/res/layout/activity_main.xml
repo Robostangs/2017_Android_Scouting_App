@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.exampledemo.parsaniahardik.generate_qr_code.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="89dp">
+
+    <EditText
+        android:id="@+id/etqr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.02"
+        android:hint="     Your FIRST and LAST Name (So you can get your outreach hours)"
+        android:textAlignment="viewStart"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textViewTeamNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.63"
+            android:text="Team Number:"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="63dp" />
+
+        <EditText
+            android:id="@+id/teamNumber"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Team #"
+            android:inputType="number"
+            android:selectAllOnFocus="false"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="301dp"
+            tools:layout_editor_absoluteY="63dp" />
+
+        <TextView
+            android:id="@+id/textViewMatchNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Match Number:"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="123dp" />
+
+        <EditText
+            android:id="@+id/matchNumber"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Match #"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="301dp"
+            tools:layout_editor_absoluteY="123dp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_weight="0.02" />
+
+    <TextView
+        android:id="@+id/textViewAuto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:text="Autonomous"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/autoGear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:showText="true"
+            android:switchMinWidth="40dp"
+            android:switchPadding="5dp"
+            android:text="Delivers Gear?"
+            android:textAllCaps="false"
+            android:textColorLink="@color/colorAccent"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:textSize="24sp"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Switch
+            android:id="@+id/baseline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:showText="true"
+            android:switchMinWidth="40dp"
+            android:switchPadding="5dp"
+            android:text="Crosses Baseline?"
+            android:textAllCaps="false"
+            android:textColorLink="@color/colorAccent"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Switch
+            android:id="@+id/autoHighGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:showText="true"
+            android:switchMinWidth="40dp"
+            android:switchPadding="5dp"
+            android:text="Scores in High goal?"
+            android:textAllCaps="false"
+            android:textColorLink="@color/colorAccent"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_weight="0.02" />
+
+    <TextView
+        android:id="@+id/textViewTeleop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:text="Teleoperated"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:text="Gears Delivered"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/teleGearMinus"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.40"
+            android:text="-"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="36sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/teleGear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.56"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="70sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/teleGearPlus"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.39"
+            android:text="+"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="36sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_weight="0.02" />
+
+    <TextView
+        android:id="@+id/textViewClimb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:text="Climb Time"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Chronometer
+            android:id="@+id/climbTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:textAlignment="center"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/climbTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="START / STOP" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.19">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Switch
+            android:id="@+id/succClimb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.18"
+            android:showText="true"
+            android:switchMinWidth="40dp"
+            android:switchPadding="5dp"
+            android:text="Successful Climb?"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.53"
+        android:ems="10"
+        android:hint="Comments"
+        android:inputType="textMultiLine"
+        android:textAlignment="textStart"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:background="#ff99cc00"
+        android:text="Done"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+</LinearLayout>
